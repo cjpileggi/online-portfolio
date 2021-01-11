@@ -1,0 +1,208 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+html {
+  font-size: 100%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#headBG {
+  margin 0;
+  height: 100vh;
+  line-height: 100vh;
+  background: #000000 url("../img/horizon.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF
+}
+
+
+#headBG h1 {
+  font-family: "poppins-medium", sans-serif;
+  font-size: 5.2rem;
+}
+
+#headBG #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: .85;
+}
+
+#headBG p {
+  font-family: "lora-regular", serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+#headBG p span:first-child::before {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 2rem 0 1rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#headBG p span::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 1rem 0 2rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#headBG.headBG-sub {
+  background: #000000;
+  height: 70vh;
+  line-height: 70vh;
+}
+
+#social-links {
+  margin-top: 3rem;
+}
+
+#social-links li {
+  display: inline-block;
+  margin: 0 1.3rem;
+  font-size: 2.3rem;
+}
+
+#social-links li a {
+color: #FFFFFF;
+transition: all 0.3s ease-in-out
+}
+
+#social-links li a:visited {
+color: #FFFFFF;
+}
+
+#social-links li a:hover {
+  color: #8AC953;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.land-sec {
+  font-size: 3.4rem;
+  font-weight: 300;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.land-sec::before, .land-sec::after {
+  content: "";
+  background-color: #CCCCCC;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  width: 35%;
+  vertical-align: middle;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.item-row .item-item {
+  background-color: #FFFFFF;
+  width: 20rem;
+  height: 24rem;
+  font-family: 'Lato', sans-serif;
+  -webkit-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
+-moz-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
+box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+text-align: center;
+}
+
+.item-row .item-item .item-img {
+  width: 100%;
+  height: 63%;
+  overflow: hidden;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.item-row .item-item img {
+  position: absolute;
+  height: 100%;
+  margin: auto;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /*max-height: 100%;
+  max-width: 100%;*/
+}
+
+.item-row .item-item h3 {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: .6rem;
+}
+
+.item-row .item-item p {
+font-size: 1.2rem;
+  /*max-height: 100%;
+  max-width: 100%;*/
+}
+
+.item-row-last {
+  justify-content: space-around;
+}
+
+.sect {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sect.grey-bg {
+  background-color: #F7F7F7;
+}
