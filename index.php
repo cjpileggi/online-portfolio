@@ -59,14 +59,6 @@ $result2 = $sth->fetchAll();
 
     <?php } ?>
     </div>
-  <div class="item-row item-row-last">
-    <div class="item-item">
-      <h3>Heylpk</h3>
-    </div>
-    <div class="item-item">
-      <h3>Heylpk</h3>
-    </div>
-  </div>
 </div>
 </div>
 

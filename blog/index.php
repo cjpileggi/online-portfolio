@@ -13,6 +13,7 @@ $sth->execute();
 
 $result = $sth->fetchAll();
 
+$rCnt = count($result);
 ?>
 <div id="headBG" class="headBG-sub">
   <div class="center">
@@ -22,9 +23,9 @@ $result = $sth->fetchAll();
 
 <div class="sect">
   <div class="container">
-  <div class="item-row">
-    <?php for ($i = 0; $i < count($result); $i++)
-    {?>
+    <div class="item-row item-row-last">
+    <?php for ($i = 0; $i < $rCnt; $i++)
+    { ?>
 
       <div class="item-item">
         <a href="entry.php?slug=<?php echo $result[$i]['slug']; ?>">
@@ -34,16 +35,9 @@ $result = $sth->fetchAll();
           </a>
       </div>
 
-  <?php } ?>
-  </div>
-<div class="item-row item-row-last">
-  <div class="item-item">
-    <h3>Heylpk</h3>
-  </div>
-  <div class="item-item">
-    <h3>Heylpk</h3>
-  </div>
-</div>
+      <?php } ?>
+      </div>
+
 </div>
 </div>
 
