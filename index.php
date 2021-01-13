@@ -45,7 +45,7 @@ $result2 = $sth->fetchAll();
     <h2 class="land-sec">
       Projects
     </h2>
-    <div class="item-row">
+    <div class="item-row item-row-last">
       <?php for ($i = 0; $i < count($result); $i++)
       {?>
 
@@ -68,7 +68,7 @@ $result2 = $sth->fetchAll();
   <h2 class="land-sec">
     Blog
   </h2>
-  <div class="item-row">
+  <div class="item-row item-row-last">
     <?php for ($i = 0; $i < count($result2); $i++)
     {?>
 
