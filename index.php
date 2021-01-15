@@ -50,7 +50,7 @@ $result2 = $sth->fetchAll();
       {?>
 
         <div class="item-item">
-          <a href="entry.php?slug=<?php echo $result[$i]['slug']; ?>">
+          <a href="project/entry.php?slug=<?php echo $result[$i]['slug']; ?>">
           <div class="item-img"><img src="../img/<?php echo $result[$i]['img']; ?>" alt="" /></div>
           <h3><?php echo $result[$i]['name']; ?></h3>
           <p><?php echo $result[$i]['blurb']; ?></p>
@@ -73,7 +73,7 @@ $result2 = $sth->fetchAll();
     {?>
 
       <div class="item-item">
-        <a href="entry.php?slug=<?php echo $result2[$i]['slug']; ?>">
+        <a href="blog/entry.php?slug=<?php echo $result2[$i]['slug']; ?>">
         <div class="item-img"><img src="../img/<?php echo $result2[$i]['img']; ?>" alt="" /></div>
         <h3><?php echo $result2[$i]['title']; ?></h3>
         <p><?php echo $result2[$i]['blurb']; ?></p>

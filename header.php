@@ -6,8 +6,10 @@ $headOpac = false;
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= STYLES_PATH . "main.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "home.css"; ?>" />
+    <link rel="stylesheet" href="<?= STYLES_PATH . "land.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!--load all styles -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png" />
