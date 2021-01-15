@@ -24,8 +24,8 @@ $result = $sth->fetchAll();
   <div class="head-contain"><h1><?php echo $result[0]['title'] ?></h1></div>
 
     <div class="date-time-cont" ><time datetime="<?php echo date_create($result[0]["date"])->format('Y-m-d H:i:s') ?>"><span class="date-time"><?php echo date_create($result[0]["date"])->format('F d, Y'); ?></span></time></div>
-    <p class="blurb"><?php echo $result[0]['blurb'] ?></p>
-    <img src="../img/<?php $result[0]['img'] ?>" alt="" />
+    <p class="blurb"><?= $result[0]['blurb'] ?></p>
+    <img src="../img/<?= $result[0]['img'] ?>" alt="" />
     <div class="body-contain">
       <?php echo $result[0]['body'] ?>
 </div>
