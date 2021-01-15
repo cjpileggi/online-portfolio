@@ -1,0 +1,42 @@
+#social-links {
+  margin-top: 3rem;
+}
+
+#social-links li {
+  display: inline-block;
+  margin: 0 1.3rem;
+  font-size: 2.3rem;
+}
+
+#social-links li a {
+color: #FFFFFF;
+transition: all 0.3s ease-in-out
+}
+
+#social-links li a:visited {
+color: #FFFFFF;
+}
+
+#social-links li a:hover {
+  color: #8AC953;
+}
+
+.land-sec {
+  font-size: 3.4rem;
+  font-weight: 300;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.land-sec::before, .land-sec::after {
+  content: "";
+  background-color: #CCCCCC;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  width: 30%;
+  vertical-align: middle;
+}
