@@ -30,7 +30,11 @@ $headOpac = false;
     <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!-- [if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
     <title><?= $title ?></title>
 	</head>
 	<body class="preload">
