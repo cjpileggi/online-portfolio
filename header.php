@@ -7,7 +7,6 @@ $headOpac = false;
 	<head>
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?= STYLES_PATH . "main.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "home.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "land.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!--load all styles -->
@@ -34,7 +33,7 @@ $headOpac = false;
     <!-- [if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
-    
+
     <title><?= $title ?></title>
 	</head>
 	<body class="preload">

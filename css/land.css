@@ -40,3 +40,14 @@ color: #FFFFFF;
   width: 30%;
   vertical-align: middle;
 }
+
+@media only screen and (max-width: 767px) {
+  #social-links li {
+    font-size: 8vw;
+  }
+
+  .land-sec {
+    font-size: 7vw;
+  }
+
+}

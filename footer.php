@@ -1,6 +1,6 @@
 <footer>
   <div id="footer-items">
-<div>
+<div id="cpy-rt">
   &#169; Copyright <?= date("Y"); ?> - Chris Pileggi
 </div>
 <div>
