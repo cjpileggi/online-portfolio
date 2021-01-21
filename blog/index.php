@@ -6,7 +6,7 @@ $headOpac = true;
 // PDO
 $pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
 $sth = $pdo->prepare('
-    SELECT * FROM blog_entry ORDER BY date
+    SELECT * FROM blog_entry ORDER BY date DESC
     ');
 
 $sth->execute();
