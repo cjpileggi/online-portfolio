@@ -16,7 +16,8 @@
 <script>
 <?php if ($headOpac) { ?>
   //document.getElementById("site-head").classList.add("opac");
-  window.onload = function() {myFunction()};
+  //window.onload = function() {myFunction()};
+  window.addEventListener("load", myFunction, true);
   window.onscroll = function() {myFunction()};
 
   function myFunction() {
@@ -30,4 +31,5 @@
       document.getElementById("site-head").className = "";
 <?php } ?>
 document.getElementsByTagName("body")[0].className = "";
+
 </script>
