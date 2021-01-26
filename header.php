@@ -47,8 +47,26 @@ $headOpac = false;
           <li><a href="/"><span class="navCent">Home</span></a></li>
           <li><a href="/projects"><span class="navCent">Projects</span></a></li>
           <li><a href="/blog"><span class="navCent">Blog</span></a></li>
+          <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </ul></div>
     </div>
+</div>
+<style>#site-head-col li{height : 3rem;}</style>
+<div id="site-head-col" style="height:100vw; width: 10rem;position:fixed;z-index:999;background-color:red;right:0;">
+<div style="height: 5rem;">
+  <span style="background-color: blue; padding: 1rem; float: right;">x</span>
+</div>
+<div>
+  <ul>
+    <li><a href="/"><span class="navCent">Home</span></a></li>
+    <li><a href="/projects"><span class="navCent">Projects</span></a></li>
+    <li><a href="/blog"><span class="navCent">Blog</span></a></li>
+    <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </ul></div>
 </div>
 
 <?php //echo dirname(__FILE__);

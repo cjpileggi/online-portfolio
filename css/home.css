@@ -110,6 +110,10 @@ color: #FFFFFF;
   margin: auto;
 }
 
+.c-menu {
+  display: none;
+}
+
 #headBG {
   margin: 0;
   height: 100vh;
@@ -339,6 +343,11 @@ color: #999999;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .c-menu {
+    display: block;
+  }
+
+
   #headBG h1 {
     font-size: 16vw;
   }
