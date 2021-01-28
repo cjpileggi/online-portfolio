@@ -47,14 +47,22 @@ $headOpac = false;
           <li><a href="/"><span class="navCent">Home</span></a></li>
           <li><a href="/projects"><span class="navCent">Projects</span></a></li>
           <li><a href="/blog"><span class="navCent">Blog</span></a></li>
-          <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </ul></div>
+        </ul>
+        <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
 </div>
-<style>#site-head-col li{height : 3rem;}</style>
-<div id="site-head-col" style="height:100vw; width: 10rem;position:fixed;z-index:999;background-color:red;right:0;">
+
+<style>
+#site-head-col {color:#FFFFFF;font-family:'Open Sans', Helvetica, Arial, sans-serif;
+height:150%; width: 10rem;position:fixed;z-index:999;background-color:#151515;right:0;}
+#site-head-col li{height : 3rem; text-align:center;}
+#site-head-col li a {color:#FFFFFF;}
+#site-head-col ul {list-style-type: none; }
+</style>
+<div id="site-head-col">
 <div style="height: 5rem;">
   <span style="background-color: blue; padding: 1rem; float: right;">x</span>
 </div>
@@ -63,9 +71,6 @@ $headOpac = false;
     <li><a href="/"><span class="navCent">Home</span></a></li>
     <li><a href="/projects"><span class="navCent">Projects</span></a></li>
     <li><a href="/blog"><span class="navCent">Blog</span></a></li>
-    <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
   </ul></div>
 </div>
 
