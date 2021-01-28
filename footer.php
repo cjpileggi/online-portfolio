@@ -32,5 +32,5 @@
 <?php } ?>
 document.getElementsByTagName("body")[0].className = "";
 
-document.getElementById("site-head-col").setAttribute("hidden", "hidden");
+//document.getElementById("site-head-col").setAttribute("hidden", "hidden");
 </script>
