@@ -84,7 +84,8 @@ color: #FFFFFF;
   height: 100%;
 }
 
-#site-head div, #site-head ul, #site-head li, #site-head li a {
+#site-head div, #site-head ul, #site-head li, #site-head li a
+, #site-head-col li, #site-head-col li a {
   height: 100%;
   display: inherit;
   align-items: center;
@@ -101,13 +102,35 @@ color: #FFFFFF;
     text-align: center;
 }
 
-#site-head li:hover {
+#site-head li:hover, #site-head-col li:hover {
   background-color: #8AC953;
   transition: all 0.2s ease-in-out;
 }
 
 #site-head .navCent {
   margin: auto;
+}
+
+#site-head-col .navCent {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+#site-head-col #collapse {
+  height: 5rem;
+}
+
+#site-head-col #collapse span {
+  background-color: #000000;
+  float: right;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: .5rem;
 }
 
 .c-menu {

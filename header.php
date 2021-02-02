@@ -63,8 +63,10 @@ height:150%; width: 10rem;position:fixed;z-index:999;background-color:#151515;ri
 #site-head-col ul {list-style-type: none; }
 </style>
 <div id="site-head-col">
-<div style="height: 5rem;">
-  <span style="background-color: blue; padding: 1rem; float: right;">x</span>
+<div id="collapse">
+  <a href="" id="col-close">
+  <span>x</span>
+</a>
 </div>
 <div>
   <ul>
