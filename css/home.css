@@ -133,8 +133,27 @@ color: #FFFFFF;
   padding-top: .5rem;
 }
 
-.c-menu {
+#site-head-col {
+  color:#FFFFFF;
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  height:150%;
+  width: 35%;
+  position:fixed;
+  z-index:999;
+  background-color:#151515;
+  right:0;
+}
+
+#site-head-col li{height : 3rem; text-align:center;}
+#site-head-col li a {color:#FFFFFF;}
+#site-head-col ul {list-style-type: none; }
+
+#c-menu {
   display: none;
+}
+
+#c-menu .fa.fa-bars {
+  font-size: 2rem;
 }
 
 #headBG {
@@ -366,9 +385,7 @@ color: #999999;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .c-menu {
-    display: block;
-  }
+
 
 
   #headBG h1 {
@@ -386,6 +403,7 @@ color: #999999;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 767px) {
+
 
   #headBG p span:first-child::before, #headBG p span::after {
     content: none;
@@ -422,6 +440,12 @@ color: #999999;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
+
+  #c-menu {
+    display: block;
+  }
+  #site-head-inner ul {display: none;}
+
   .contain, .contain .head-contain {
     width: 100%;
   }
