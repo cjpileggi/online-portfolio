@@ -48,7 +48,7 @@ $headOpac = false;
           <li><a href="/projects"><span class="navCent">Projects</span></a></li>
           <li><a href="/blog"><span class="navCent">Blog</span></a></li>
         </ul>
-        <a href="#" id="c-menu">
+        <a href="#0" id="c-menu">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -56,7 +56,7 @@ $headOpac = false;
 </div>
 <div id="site-head-col" style="display:none;">
 <div id="collapse">
-  <a href="#" id="col-close">
+  <a href="#0" id="col-close">
   <span>x</span>
 </a>
 </div>
