@@ -17,10 +17,10 @@
 <?php if ($headOpac) { ?>
   //document.getElementById("site-head").classList.add("opac");
   //window.onload = function() {myFunction()};
-  window.addEventListener("load", myFunction, true);
-  window.onscroll = function() {myFunction()};
+  window.addEventListener("load", headScroll, true);
+  window.onscroll = function() {headScroll()};
 
-  function myFunction() {
+  function headScroll() {
     if (document.documentElement.scrollTop === 0) {
       document.getElementById("site-head").className = "opac";
     } else {
@@ -31,6 +31,28 @@
       document.getElementById("site-head").className = "";
 <?php } ?>
 document.getElementsByTagName("body")[0].className = "";
+
+document.getElementById("col-close").onclick = function() {collapse()};
+
+function collapse() {
+  var x = document.getElementById("site-head-col");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+document.getElementById("c-menu").onclick = function() {expand()};
+
+function expand() {
+  var x = document.getElementById("site-head-col");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 //document.getElementById("site-head-col").setAttribute("hidden", "hidden");
 </script>

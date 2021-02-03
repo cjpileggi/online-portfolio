@@ -48,23 +48,15 @@ $headOpac = false;
           <li><a href="/projects"><span class="navCent">Projects</span></a></li>
           <li><a href="/blog"><span class="navCent">Blog</span></a></li>
         </ul>
-        <a href="javascript:void(0);" class="c-menu" onclick="myFunction()">
+        <a href="#" id="c-menu">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 </div>
-
-<style>
-#site-head-col {color:#FFFFFF;font-family:'Open Sans', Helvetica, Arial, sans-serif;
-height:150%; width: 10rem;position:fixed;z-index:999;background-color:#151515;right:0;}
-#site-head-col li{height : 3rem; text-align:center;}
-#site-head-col li a {color:#FFFFFF;}
-#site-head-col ul {list-style-type: none; }
-</style>
-<div id="site-head-col">
+<div id="site-head-col" style="display:none;">
 <div id="collapse">
-  <a href="" id="col-close">
+  <a href="#" id="col-close">
   <span>x</span>
 </a>
 </div>
