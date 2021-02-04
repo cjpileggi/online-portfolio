@@ -23,6 +23,9 @@ $rCnt = count($result);
 
 <div class="sect">
   <div class="container">
+    <div id="pEuler">
+    <img src="https://projecteuler.net/profile/cpileggi.png" alt="Project Euler Progress" />
+  </div>
 
   <div class="item-row item-row-last">
   <?php for ($i = 0; $i < $rCnt; $i++)
