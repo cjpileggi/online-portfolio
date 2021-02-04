@@ -8,7 +8,7 @@ $headOpac = true;
 // PDO
 $pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
 $sth = $pdo->prepare('
-    SELECT * FROM project_entry ORDER BY create_date LIMIT 3
+    SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date LIMIT 3
     ');
 
 $sth->execute();
