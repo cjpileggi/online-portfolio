@@ -1,22 +1,10 @@
 <?php
 $title = "Chris Pileggi - Projects";
 include "../header.php";
+include_once "../dbConfig.php";
 
-
-// PDO
-$pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
-
-$params = array(':slug' => $_GET['slug']);
-
-$sth = $pdo->prepare('
-    SELECT * FROM project_entry
-    WHERE slug = :slug
-    ');
-
-$sth->execute($params);
-
-$result = $sth->fetchAll();
-
+$result = $db->queryRes("SELECT * FROM project_entry
+WHERE slug = :slug", array(':slug' => $_GET['slug']));
 
 ?>
 

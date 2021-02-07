@@ -1,29 +1,12 @@
 
 <?php
+include_once "dbConfig.php";
 $title = "Chris Pileggi";
 include "header.php";
 $headOpac = true;
 
-
-// PDO
-$pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
-$sth = $pdo->prepare('
-    SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date LIMIT 3
-    ');
-
-$sth->execute();
-
-$result = $sth->fetchAll();
-
-$sth = $pdo->prepare('
-    SELECT * FROM blog_entry ORDER BY date LIMIT 3
-    ');
-
-$sth->execute();
-
-$result2 = $sth->fetchAll();
-
-
+$result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date LIMIT 3");
+$result2 = $db->queryRes("SELECT * FROM blog_entry ORDER BY date LIMIT 3");
 
 ?>
 <div id="headBG">
