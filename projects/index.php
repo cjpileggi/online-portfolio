@@ -2,17 +2,9 @@
 $title = "Chris Pileggi - Projects";
 include "../header.php";
 $headOpac = true;
+include_once "../dbConfig.php";
 
-// PDO
-$pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
-$sth = $pdo->prepare('
-    SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC
-    ');
-
-$sth->execute();
-
-$result = $sth->fetchAll();
-
+$result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC");
 $rCnt = count($result);
 ?>
 <div id="headBG" class="headBG-sub">

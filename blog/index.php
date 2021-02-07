@@ -1,17 +1,10 @@
 <?php
+include_once "../dbConfig.php";
 $title = "Chris Pileggi - Blog";
 include "../header.php";
 $headOpac = true;
 
-// PDO
-$pdo = new PDO("mysql:host=localhost;dbname=portfolio_main", 'root', '');
-$sth = $pdo->prepare('
-    SELECT * FROM blog_entry ORDER BY date DESC
-    ');
-
-$sth->execute();
-
-$result = $sth->fetchAll();
+$result = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC");
 
 $rCnt = count($result);
 ?>
