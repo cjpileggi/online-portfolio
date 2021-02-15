@@ -353,6 +353,29 @@ line-height: 1.7rem;
   margin-bottom: 3rem;
 }
 
+#proj-git {
+  width: 100%;
+  text-align: center;
+}
+
+#proj-git i {
+  font-size: 4rem;
+}
+
+#proj-git a {
+   transition: all 0.2s ease-in-out;
+   text-decoration: underline;
+}
+
+#proj-git a:hover {
+   color: #8AC953;
+   transition: all 0.2s ease-in-out;
+}
+
+#proj-git-ico {
+  display: block;
+}
+
 footer {
   background-color: #151515;
   color: #999999;
