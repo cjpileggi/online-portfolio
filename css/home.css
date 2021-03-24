@@ -345,12 +345,15 @@ line-height: 1.7rem;
 .contain .body-contain li {
   list-style-position: inside;
 }
-
 /**/
 
 #pEuler {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+#pEuler img {
+  width: initial;
 }
 
 #proj-git {
