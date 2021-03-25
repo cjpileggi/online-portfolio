@@ -345,6 +345,10 @@ line-height: 1.7rem;
 .contain .body-contain li {
   list-style-position: inside;
 }
+
+.body-contain p {
+  margin-bottom: 2rem;
+}
 /**/
 
 #pEuler {
