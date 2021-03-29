@@ -337,7 +337,7 @@ margin-bottom: 3rem;
 }
 
 .contain .body-contain > * {
-margin-bottom: 1rem;
+margin-bottom: 1.5rem;
 font-size: 1.3rem;
 line-height: 1.7rem;
 }
@@ -347,8 +347,20 @@ line-height: 1.7rem;
 }
 
 .body-contain p {
+  margin-bottom: 1.5rem;
+}
+
+.body-contain h2 {
   margin-bottom: 2rem;
 }
+
+.body-contain a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #8AC953;
+}
+
+
+
 /**/
 
 #pEuler {
