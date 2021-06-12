@@ -4,10 +4,7 @@
 *
 */
 
-define('DBHOST', "localhost");
-define('DBNAME', "portfolio_main");
-define('DBUN', "root");
-define('DBPW', "");
+include_once "config.php";
 
 class queryDB {
   /**
