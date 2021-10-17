@@ -1,7 +1,12 @@
 <?php
-define("STYLES_PATH", "/css/");
-$headOpac = false;
- ?>
+  /*
+  * Global Header
+  *
+  */
+
+  define("STYLES_PATH", "/css/");
+  $headOpac = false;
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
@@ -11,6 +16,7 @@ $headOpac = false;
     <link rel="stylesheet" href="<?= STYLES_PATH . "land.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!--load all styles -->
 
+    <!--favicon and shortcut icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png" />
@@ -37,36 +43,37 @@ $headOpac = false;
     <title><?= $title ?></title>
 	</head>
 	<body class="preload">
-    <div id="site-head" class="opac">
+    <div id="site-head" class="opac"> <!--begin navigation bar-->
       <div id="site-head-inner">
-      <div>
-        <img src="/img/logo.png" id="site-logo" alt="Logo" style="width: 3rem;">
+        <div>
+          <img src="/img/logo.png" id="site-logo" alt="Logo" style="width: 3rem;">
+        </div>
+        <div>
+          <ul>
+            <li><a href="/"><span class="navCent">Home</span></a></li>
+            <li><a href="/projects"><span class="navCent">Projects</span></a></li>
+            <li><a href="/blog"><span class="navCent">Blog</span></a></li>
+          </ul>
+          <a href="#0" id="c-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div> <!--end navigation bar-->
+    </div>
+
+    <div id="site-head-col" style="display:none;"> <!--begin collapsible navigation-->
+      <div id="collapse">
+        <a href="#0" id="col-close">
+          <span>x</span>
+        </a>
       </div>
       <div>
         <ul>
           <li><a href="/"><span class="navCent">Home</span></a></li>
           <li><a href="/projects"><span class="navCent">Projects</span></a></li>
           <li><a href="/blog"><span class="navCent">Blog</span></a></li>
-        </ul>
-        <a href="#0" id="c-menu">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-</div>
-<div id="site-head-col" style="display:none;">
-<div id="collapse">
-  <a href="#0" id="col-close">
-  <span>x</span>
-</a>
-</div>
-<div>
-  <ul>
-    <li><a href="/"><span class="navCent">Home</span></a></li>
-    <li><a href="/projects"><span class="navCent">Projects</span></a></li>
-    <li><a href="/blog"><span class="navCent">Blog</span></a></li>
-  </ul></div>
-</div>
+        </ul></div>
+      </div> <!--end collapsible navigation-->
 
 <?php //echo dirname(__FILE__);
 //echo ($_SERVER['DOCUMENT_ROOT']); ?>
