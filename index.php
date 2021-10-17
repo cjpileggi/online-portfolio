@@ -1,5 +1,9 @@
-
 <?php
+  /*
+  * Landing Page
+  *
+  */
+
   include_once "dbConfig.php";
   $title = "Chris Pileggi";
   include "header.php";
