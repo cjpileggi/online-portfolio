@@ -13,6 +13,7 @@
 </div>
 </div>
 </footer>
+</body>
 <script>
 <?php if ($headOpac) { ?>
   //document.getElementById("site-head").classList.add("opac");
