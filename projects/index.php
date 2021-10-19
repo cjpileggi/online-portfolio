@@ -1,4 +1,9 @@
 <?php
+/*
+* Project Entries
+*
+*
+*/
 $title = "Chris Pileggi - Projects";
 include "../header.php";
 $headOpac = true;
@@ -13,29 +18,25 @@ $rCnt = count($result);
   </div>
 </div>
 
-<div class="sect">
+<div class="sect"><!--begin project entries-->
   <div class="container">
     <div id="pEuler">
-    <img src="https://projecteuler.net/profile/cpileggi.png" alt="Project Euler Progress" />
-  </div>
-
-  <div class="item-row item-row-last">
-  <?php for ($i = 0; $i < $rCnt; $i++)
-  {?>
-
-    <div class="item-item">
-      <a href="entry.php?slug=<?php echo $result[$i]['slug']; ?>">
-      <div class="item-img"><img src="../img/<?php echo $result[$i]['img']; ?>" alt="" /></div>
-      <h3><?php echo $result[$i]['name']; ?></h3>
-      <p><?php echo $result[$i]['blurb']; ?></p>
-        </a>
+      <img src="https://projecteuler.net/profile/cpileggi.png" alt="Project Euler Progress" />
     </div>
 
-<?php } ?>
-</div>
-
-
-</div>
-</div>
+    <div class="item-row item-row-last">
+      <?php for ($i = 0; $i < $rCnt; $i++)
+      { ?>
+        <div class="item-item">
+          <a href="entry.php?slug=<?php echo $result[$i]['slug']; ?>">
+            <div class="item-img"><img src="../img/<?php echo $result[$i]['img']; ?>" alt="" /></div>
+            <h3><?php echo $result[$i]['name']; ?></h3>
+            <p><?php echo $result[$i]['blurb']; ?></p>
+          </a>
+        </div>
+      <?php } ?>
+    </div>
+  </div>
+</div><!--end project entries-->
 
 <?php include "../footer.php";?>
