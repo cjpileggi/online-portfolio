@@ -25,6 +25,5 @@ $result = $db->queryRes("SELECT * FROM project_entry WHERE slug = :slug", array(
     <?php echo $result[0]['body'] ?>
   </div>
 </div><!--end project entry-->
-</div>
 
 <?php include "../footer.php";?>
