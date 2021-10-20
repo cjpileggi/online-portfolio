@@ -11,7 +11,7 @@ include_once "../dbConfig.php";
 $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':slug' => $_GET['slug']));
 ?>
 
-<div class="contain">
+<div class="contain"><!--begin blog entry detail-->
   <div class="head-contain"><h1><?php echo $result[0]['title'] ?></h1></div>
   <div class="date-time-cont" >
     <time datetime="<?php echo date_create($result[0]["date"])->format('Y-m-d H:i:s') ?>">
@@ -23,6 +23,6 @@ $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':s
   <div class="body-contain">
     <?php echo $result[0]['body'] ?>
   </div>
-</div>
+</div><!--end blog entry detail-->
 
 <?php include "../footer.php";?>
