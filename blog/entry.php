@@ -24,6 +24,5 @@ $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':s
     <?php echo $result[0]['body'] ?>
   </div>
 </div>
-</div>
 
 <?php include "../footer.php";?>
