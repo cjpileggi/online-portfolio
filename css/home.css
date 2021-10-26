@@ -1,3 +1,6 @@
+/* Global Styles
+====================================*/
+
 * {
   position: relative;
   margin: 0;
@@ -5,6 +8,7 @@
   scroll-behavior: smooth;
 }
 
+/* IE */
 @-ms-viewport {
   width: device-width;
 }
@@ -13,11 +17,14 @@ html {
   font-size: 100%;
 }
 
-a, a:link, a:visited {
+a
+, a:link
+, a:visited {
   text-decoration: none;
   color: #000000;
 }
 
+/* MAY NOT NEED FOR CODE SNIPPETS */
 pre {
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -26,6 +33,14 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+/* Global Classes
+======================================*/
+
+/* 
+Preload
+Prevent animations in body until page finishes loading
+ - Used to prevent header animation on page load
+*/
 .preload * {
   transition: none !important;
   -webkit-transition: none !important;
@@ -48,6 +63,10 @@ pre {
 }
 
 
+
+/* Header Elements
+======================================*/
+/*CHANGE NAME*/
 #site-head {
   position: fixed;
   top: 0;
@@ -72,7 +91,7 @@ pre {
 }
 
 #site-head.opac a {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 #site-head #site-head-inner {
@@ -84,14 +103,19 @@ color: #FFFFFF;
   height: 100%;
 }
 
-#site-head div, #site-head ul, #site-head li, #site-head li a
-, #site-head-col li, #site-head-col li a {
+
+#site-head div
+, #site-head ul
+, #site-head li
+, #site-head li a
+, #site-head-col li
+, #site-head-col li a {
   height: 100%;
   display: inherit;
   align-items: center;
 }
 
-#site-head li{
+#site-head li {
   /*padding: 0 .5rem;*/
   width: 5rem;
   transition: all 0.2s ease-in-out;
@@ -111,6 +135,8 @@ color: #FFFFFF;
   margin: auto;
 }
 
+/* Collapsible Header Elements
+===================================*/
 #site-head-col .navCent {
   position: absolute;
   top: 30%;
@@ -133,6 +159,7 @@ color: #FFFFFF;
   padding-top: .5rem;
 }
 
+/*MOVE UP*/
 #site-head-col {
   color:#FFFFFF;
   font-family:'Open Sans', Helvetica, Arial, sans-serif;
@@ -144,10 +171,20 @@ color: #FFFFFF;
   right:0;
 }
 
-#site-head-col li{height : 3rem; text-align:center;}
-#site-head-col li a {color:#FFFFFF;}
-#site-head-col ul {list-style-type: none; }
+#site-head-col li {
+  height : 3rem;
+  text-align:center;
+}
 
+#site-head-col li a {
+  color:#FFFFFF;
+}
+
+#site-head-col ul {
+  list-style-type: none;
+}
+
+/* Menu Icons */
 #c-menu {
   display: none;
 }
@@ -156,6 +193,10 @@ color: #FFFFFF;
   font-size: 2rem;
 }
 
+
+
+/* Page Title Area
+==========================*/
 #headBG {
   margin: 0;
   height: 100vh;
@@ -165,7 +206,6 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF
 }
-
 
 #headBG h1 {
   font-family: "poppins-medium", sans-serif;
@@ -214,6 +254,9 @@ color: #FFFFFF;
   line-height: 70vh;
 }
 
+
+/* Blog and Project Items
+============================*/
 .item-row {
   display: flex;
   flex-direction: row;
@@ -229,12 +272,12 @@ color: #FFFFFF;
   margin-bottom: 6rem;
   font-family: 'Lato', sans-serif;
   -webkit-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
--moz-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-text-align: center;
+  -moz-box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
+  box-shadow: 5px 9px 20px -4px rgba(0,0,0,0.54);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .item-row .item-item .item-img {
@@ -278,6 +321,8 @@ font-size: 1.1rem;
   justify-content: space-around;
 }
 
+/* Page Section
+=======================*/
 .sect {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -291,6 +336,11 @@ font-size: 1.1rem;
 .head-contain {
   width: 100%
 }
+
+
+/* Container
+=============================*/
+/*MERGE WITH SECT?*/
 
 .contain {
   margin-top: 10rem;
@@ -320,8 +370,8 @@ font-size: 1.1rem;
 }
 
 .contain .blurb {
-font-style: italic;
-margin-bottom: 3rem;
+  font-style: italic;
+  margin-bottom: 3rem;
 }
 
 .contain img {
@@ -337,9 +387,9 @@ margin-bottom: 3rem;
 }
 
 .contain .body-contain > * {
-margin-bottom: 1.5rem;
-font-size: 1.3rem;
-line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 .contain .body-contain li {
@@ -361,7 +411,8 @@ line-height: 1.7rem;
 
 
 
-/**/
+/* Project Elements
+==========================*/
 
 #pEuler {
   text-align: center;
@@ -382,19 +433,25 @@ line-height: 1.7rem;
 }
 
 #proj-git a {
-   transition: all 0.2s ease-in-out;
-   text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
 }
 
 #proj-git a:hover {
-   color: #8AC953;
-   transition: all 0.2s ease-in-out;
+  color: #8AC953;
+  transition: all 0.2s ease-in-out;
 }
 
 #proj-git-ico {
   display: block;
 }
 
+
+
+/* Footer
+===============================*/
+
+/*MOVE TO TOP*/
 footer {
   background-color: #151515;
   color: #999999;
@@ -402,19 +459,19 @@ footer {
   height: 3rem;
 }
 
-
+/*MERGE WITH FOOTER?*/
 #footer-social-links li {
   display: inline-block;
   margin: 0 .7rem;
 }
 
 #footer-social-links li a {
-color: #999999;
-transition: all 0.3s ease-in-out
+  color: #999999;
+  transition: all 0.3s ease-in-out
 }
 
 #footer-social-links li a:visited {
-color: #999999;
+  color: #999999;
 }
 
 #footer-social-links li a:hover {
@@ -422,7 +479,7 @@ color: #999999;
 }
 
 #cpy-rt, #footer-social-links {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 #footer-items {
@@ -435,11 +492,9 @@ color: #999999;
   height: 100%;
 }
 
+/* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-
-
   #headBG h1 {
     font-size: 16vw;
   }
@@ -450,12 +505,10 @@ color: #999999;
   #headBG h1 {
     font-size: 11vw;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 767px) {
-
 
   #headBG p span:first-child::before, #headBG p span::after {
     content: none;
@@ -487,8 +540,7 @@ color: #999999;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
