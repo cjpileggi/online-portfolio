@@ -379,32 +379,32 @@ font-size: 1.1rem;
   margin-bottom: 3rem;
 }
 
-.entry-detail .body-contain {
+.entry-detail__body {
   text-align: left;
   font-size: 1rem;
   width: 42rem;
   margin: auto;
 }
 
-.entry-detail .body-contain > * {
+.entry-detail__body > * {
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
   line-height: 1.7rem;
 }
 
-.entry-detail .body-contain h2 {
+.entry-detail__body h2 {
   margin-bottom: 2rem;
 }
 
-.entry-detail .body-contain p {
+.entry-detail__body p {
   margin-bottom: 1.5rem;
 }
 
-.entry-detail .body-contain li {
+.entry-detail__body li {
   list-style-position: inside;
 }
 
-.entry-detail .body-contain a:hover {
+.entry-detail__body a:hover {
   transition: all 0.2s ease-in-out;
   color: #8AC953;
 }
