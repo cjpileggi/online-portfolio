@@ -351,60 +351,60 @@ font-size: 1.1rem;
   text-align: center;
 }
 
-.contain img {
+.entry-detail img {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.contain .head-contain {
+.entry-detail .head-contain {
   width: 40rem;
   margin: auto;
   margin-bottom: 1.5rem;
 }
 
-.contain .head-contain h1 {
+.entry-detail .head-contain h1 {
   font-size: 4rem;
 }
 
-.contain .date-time {
+.entry-detail .date-time {
   font-size: 1rem;
 }
 
-.contain .date-time-cont {
+.entry-detail .date-time-cont {
   margin-bottom: 1rem;
 }
 
-.contain .blurb {
+.entry-detail .blurb {
   font-style: italic;
   margin-bottom: 3rem;
 }
 
-.contain .body-contain {
+.entry-detail .body-contain {
   text-align: left;
   font-size: 1rem;
   width: 42rem;
   margin: auto;
 }
 
-.contain .body-contain > * {
+.entry-detail .body-contain > * {
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
   line-height: 1.7rem;
 }
 
-.contain .body-contain h2 {
+.entry-detail .body-contain h2 {
   margin-bottom: 2rem;
 }
 
-.contain .body-contain p {
+.entry-detail .body-contain p {
   margin-bottom: 1.5rem;
 }
 
-.contain .body-contain li {
+.entry-detail .body-contain li {
   list-style-position: inside;
 }
 
-.contain .body-contain a:hover {
+.entry-detail .body-contain a:hover {
   transition: all 0.2s ease-in-out;
   color: #8AC953;
 }
