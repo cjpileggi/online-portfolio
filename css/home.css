@@ -544,12 +544,12 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
 
-  .contain
-  , .contain .head-contain {
+  .entry-detail
+  , .entry-detail__head {
     width: 100%;
   }
 
-  .contain .body-contain {
+  .entry-detail__body {
     width: 90%;
   }
 
