@@ -11,7 +11,7 @@ include_once "../dbConfig.php";
 $result = $db->queryRes("SELECT * FROM project_entry WHERE slug = :slug", array(':slug' => $_GET['slug']));
 ?>
 
-<div class="contain"><!--begin project entry-->
+<div class="entry-detail"><!--begin project entry-->
   <div class="head-contain"><h1><?php echo $result[0]['name'] ?></h1></div>
   <p class="blurb"><?php echo $result[0]['blurb'] ?></p>
   <img src="../img/<?php echo $result[0]['img'] ?>" alt="" />
