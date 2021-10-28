@@ -24,7 +24,7 @@ $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':s
   </div>
   <p class="blurb"><?= $result[0]['blurb'] ?></p>
   <img src="../img/<?= $result[0]['img'] ?>" alt="" />
-  <div class="body-contain">
+  <div class="entry-detail__body">
     <?php echo $result[0]['body'] ?>
   </div>
 </div><!--end blog entry detail-->
