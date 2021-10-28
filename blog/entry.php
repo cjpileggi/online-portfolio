@@ -12,7 +12,11 @@ $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':s
 ?>
 
 <div class="entry-detail"><!--begin blog entry detail-->
-  <div class="head-contain"><h1><?php echo $result[0]['title'] ?></h1></div>
+  <div class="entry-detail__head">
+    <h1>
+      <?php echo $result[0]['title'] ?>
+    </h1>
+  </div>
   <div class="date-time-cont" >
     <time datetime="<?php echo date_create($result[0]["date"])->format('Y-m-d H:i:s') ?>">
       <span class="date-time"><?php echo date_create($result[0]["date"])->format('F d, Y'); ?></span>

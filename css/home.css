@@ -356,13 +356,13 @@ font-size: 1.1rem;
   margin-bottom: 3rem;
 }
 
-.entry-detail .head-contain {
+.entry-detail__head {
   width: 40rem;
   margin: auto;
   margin-bottom: 1.5rem;
 }
 
-.entry-detail .head-contain h1 {
+.entry-detail__head h1 {
   font-size: 4rem;
 }
 
