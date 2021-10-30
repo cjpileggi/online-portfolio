@@ -343,8 +343,8 @@ font-size: 1.1rem;
 /*ONLY IN ENTRY AREAS; RENAME*/
 
 .entry-detail {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   width: 55rem;
   margin-left: auto;
   margin-right: auto;
