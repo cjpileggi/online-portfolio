@@ -256,7 +256,7 @@ Prevent animations in body until page finishes loading
 
 /* Blog and Project Items
 ============================*/
-.item-row {
+.entry__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -264,7 +264,7 @@ Prevent animations in body until page finishes loading
   margin-bottom: 3rem;
 }
 
-.item-row .item-item {
+.entry__item {
   background-color: #FFFFFF;
   width: 20rem;
   height: 28rem;
@@ -279,7 +279,7 @@ Prevent animations in body until page finishes loading
   text-align: center;
 }
 
-.item-row .item-item img {
+.entry__item img {
   position: absolute;
   height: 100%;
   margin: auto;
@@ -294,19 +294,19 @@ Prevent animations in body until page finishes loading
   max-width: 100%;*/
 }
 
-.item-row .item-item h3 {
+.entry__item h3 {
   display: block;
   font-size: 1.6rem;
   margin-bottom: .6rem;
 }
 
-.item-row .item-item p {
+.entry__item p {
 font-size: 1.1rem;
   /*max-height: 100%;
   max-width: 100%;*/
 }
 
-.item-row .item-item .item-img {
+.entry__img {
   width: 100%;
   height: 63%;
   overflow: hidden;
@@ -316,7 +316,7 @@ font-size: 1.1rem;
   text-align: center;
 }
 
-.item-row-last {
+.entry__row--last {
   justify-content: space-around;
 }
 
@@ -511,12 +511,12 @@ font-size: 1.1rem;
     width: 95%;
   }
 
-  .item-row .item-item {
+  .entry__item {
     width: 100%;
     height: 100%;
   }
 
-  .item-row .item-item img {
+  .entry__item img {
     position: relative;
     width: 100%;
     top: 0;

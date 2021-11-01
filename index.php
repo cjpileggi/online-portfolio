@@ -32,14 +32,14 @@
     <h2 class="land-sec">
       Projects
     </h2>
-    <div class="item-row item-row-last">
+    <div class="entry__row entry__row--last">
       <?php 
       // Project Entries
       for ($i = 0; $i < count($result); $i++)
       {?>
-        <div class="item-item">
+        <div class="entry__item">
           <a href="projects/entry.php?slug=<?php echo $result[$i]['slug']; ?>">
-            <div class="item-img"><img src="../img/<?php echo $result[$i]['img']; ?>" alt="" /></div>
+            <div class="entry__img"><img src="../img/<?php echo $result[$i]['img']; ?>" alt="" /></div>
             <h3><?php echo $result[$i]['name']; ?></h3>
             <p><?php echo $result[$i]['blurb']; ?></p>
           </a>
@@ -55,14 +55,14 @@
     <h2 class="land-sec">
       Blog
     </h2>
-    <div class="item-row item-row-last">
+    <div class="entry__row entry__row--last">
       <?php
         // Blog Entries
         for ($i = 0; $i < count($result2); $i++)
         {?>
-        <div class="item-item">
+        <div class="entry__item">
           <a href="blog/entry.php?slug=<?php echo $result2[$i]['slug']; ?>">
-          <div class="item-img"><img src="../img/<?php echo $result2[$i]['img']; ?>" alt="" /></div>
+          <div class="entry__img"><img src="../img/<?php echo $result2[$i]['img']; ?>" alt="" /></div>
           <h3><?php echo $result2[$i]['title']; ?></h3>
           <p><?php echo $result2[$i]['blurb']; ?></p>
         </a>
