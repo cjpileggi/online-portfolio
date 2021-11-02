@@ -43,8 +43,8 @@
     <title><?= $title ?></title>
 	</head>
 	<body class="preload">
-    <div id="site-head" class="opac"> <!--begin navigation bar-->
-      <div id="site-head-inner">
+    <div id="header" class="opac"> <!--begin navigation bar-->
+      <div id="header_inner">
         <div>
           <img src="/img/logo.png" id="site-logo" alt="Logo" style="width: 3rem;">
         </div>
@@ -61,7 +61,7 @@
       </div> <!--end navigation bar-->
     </div>
 
-    <div id="site-head-col" style="display:none;"> <!--begin collapsible navigation-->
+    <div id="header-collapse" style="display:none;"> <!--begin collapsible navigation-->
       <div id="collapse">
         <a href="#0" id="col-close">
           <span>x</span>

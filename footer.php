@@ -18,7 +18,7 @@
 <?php
 /* Make header transparent when scrolled to the top of page */
 if ($headOpac) { ?>
-  //document.getElementById("site-head").classList.add("opac");
+  //document.getElementById("header").classList.add("opac");
   //window.onload = function() {myFunction()};
   window.addEventListener("load", headScroll, true);
   window.onscroll = function() {headScroll()};
@@ -26,13 +26,13 @@ if ($headOpac) { ?>
   // add transparent classname when scrolled on top
   function headScroll() {
     if (document.documentElement.scrollTop === 0) {
-      document.getElementById("site-head").className = "opac";
+      document.getElementById("header").className = "opac";
     } else {
-      document.getElementById("site-head").className = "";
+      document.getElementById("header").className = "";
     }
   }
 <?php } else { ?>
-      document.getElementById("site-head").className = "";
+      document.getElementById("header").className = "";
 <?php } ?>
 
 // remove preload
@@ -42,7 +42,7 @@ document.getElementsByTagName("body")[0].className = "";
 document.getElementById("col-close").onclick = function() {collapse()};
 
 function collapse() {
-  var x = document.getElementById("site-head-col");
+  var x = document.getElementById("header-collapse");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -54,12 +54,12 @@ function collapse() {
 document.getElementById("c-menu").onclick = function() {expand()};
 
 function expand() {
-  var x = document.getElementById("site-head-col");
+  var x = document.getElementById("header-collapse");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
-//document.getElementById("site-head-col").setAttribute("hidden", "hidden");
+//document.getElementById("header-collapse").setAttribute("hidden", "hidden");
 </script>
