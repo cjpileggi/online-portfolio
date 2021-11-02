@@ -43,7 +43,7 @@
     <title><?= $title ?></title>
 	</head>
 	<body class="preload">
-    <div id="header" class="opac"> <!--begin navigation bar-->
+    <div id="header" class="header--opac"> <!--begin navigation bar-->
       <div id="header_inner">
         <div>
           <img src="/img/logo.png" id="site-logo" alt="Logo" style="width: 3rem;">
