@@ -67,7 +67,7 @@ Prevent animations in body until page finishes loading
 /* Header Elements
 ======================================*/
 /*CHANGE NAME*/
-#site-head {
+#header {
   position: fixed;
   top: 0;
   z-index: 999;
@@ -82,35 +82,35 @@ Prevent animations in body until page finishes loading
 }
 
 /* Includes collapsible elements */
-#site-head div
-, #site-head ul
-, #site-head li
-, #site-head li a
-, #site-head-col li
-, #site-head-col li a {
+#header div
+, #header ul
+, #header li
+, #header li a
+, #header-collapse li
+, #header-collapse li a {
   height: 100%;
   display: inherit;
   align-items: center;
 }
 
-#site-head li:hover
-, #site-head-col li:hover {
+#header li:hover
+, #header-collapse li:hover {
   background-color: #8AC953;
   transition: all 0.2s ease-in-out;
 }
 
-#site-head li {
+#header li {
   /*padding: 0 .5rem;*/
   width: 5rem;
   transition: all 0.2s ease-in-out;
 }
 
-#site-head li a {
+#header li a {
   width: 100%;
   text-align: center;
 }
 
-#site-head.opac {
+#header.opac {
   background-color: rgba(255, 255, 255, 0);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -119,15 +119,15 @@ Prevent animations in body until page finishes loading
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-#site-head.opac a {
+#header.opac a {
   color: #FFFFFF;
 }
 
-#site-head .navCent {
+#header .navCent {
   margin: auto;
 }
 
-#site-head #site-head-inner {
+#header #header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,7 +139,7 @@ Prevent animations in body until page finishes loading
 /* Collapsible Header Elements
 ===================================*/
 
-#site-head-col {
+#header-collapse {
   color:#FFFFFF;
   font-family:'Open Sans', Helvetica, Arial, sans-serif;
   height:150%;
@@ -150,31 +150,31 @@ Prevent animations in body until page finishes loading
   right:0;
 }
 
-#site-head-col ul {
+#header-collapse ul {
   list-style-type: none;
 }
 
-#site-head-col li {
+#header-collapse li {
   height : 3rem;
   text-align:center;
 }
 
-#site-head-col li a {
+#header-collapse li a {
   color:#FFFFFF;
 }
 
-#site-head-col .navCent {
+#header-collapse .navCent {
   position: absolute;
   top: 30%;
   left: 0;
   right: 0;
 }
 
-#site-head-col #collapse {
+#header-collapse #collapse {
   height: 5rem;
 }
 
-#site-head-col #collapse span {
+#header-collapse #collapse span {
   background-color: #000000;
   float: right;
   height: 2.5rem;
@@ -555,7 +555,7 @@ font-size: 1.1rem;
     display: block;
   }
 
-  #site-head-inner ul {
+  #header_inner ul {
     display: none;
   }
 }
