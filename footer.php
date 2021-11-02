@@ -18,7 +18,7 @@
 <?php
 /* Make header transparent when scrolled to the top of page */
 if ($headOpac) { ?>
-  //document.getElementById("header").classList.add("opac");
+  //document.getElementById("header").classList.add("header--opac");
   //window.onload = function() {myFunction()};
   window.addEventListener("load", headScroll, true);
   window.onscroll = function() {headScroll()};
@@ -26,7 +26,7 @@ if ($headOpac) { ?>
   // add transparent classname when scrolled on top
   function headScroll() {
     if (document.documentElement.scrollTop === 0) {
-      document.getElementById("header").className = "opac";
+      document.getElementById("header").className = "header--opac";
     } else {
       document.getElementById("header").className = "";
     }
