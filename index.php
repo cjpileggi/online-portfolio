@@ -14,7 +14,7 @@
 ?>
 
 <div id="page-head"><!--beginning of landing page title-->
-  <div id="overlay"></div>
+  <div id="page-head__overlay"></div>
   <div class="center">
     <h1>Christopher Pileggi</h1>
     <p><span>Full Stack Developer</span><span>Data Scientist</span></p>

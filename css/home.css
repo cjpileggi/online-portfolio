@@ -244,7 +244,8 @@ Prevent animations in body until page finishes loading
   line-height: 70vh;
 }
 
-#page-head #overlay {
+/* Transparent overlay */
+#page-head__overlay {
   position: absolute;
   top: 0;
   left: 0;
