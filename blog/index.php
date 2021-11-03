@@ -14,7 +14,7 @@ $result = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC");
 
 $rCnt = count($result);
 ?>
-<div id="headBG" class="headBG-sub">
+<div id="page-head" class="page-head--sub">
   <div class="center">
     <h1>Blog</h1>
   </div>
