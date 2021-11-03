@@ -12,7 +12,7 @@ include_once "../dbConfig.php";
 $result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC");
 $rCnt = count($result);
 ?>
-<div id="headBG" class="headBG-sub">
+<div id="page-head" class="page-head--sub">
   <div class="center">
     <h1>Projects</h1>
   </div>

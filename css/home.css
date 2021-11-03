@@ -196,7 +196,7 @@ Prevent animations in body until page finishes loading
 
 /* Page Title Area
 ==========================*/
-#headBG {
+#page-head {
   margin: 0;
   height: 100vh;
   line-height: 100vh;
@@ -206,45 +206,45 @@ Prevent animations in body until page finishes loading
   color: #FFFFFF
 }
 
-#headBG h1 {
+#page-head h1 {
   font-family: "poppins-medium", sans-serif;
   font-size: 7vw;
 }
 
-#headBG p {
+#page-head p {
   font-family: "lora-regular", serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
 }
 
-#headBG p span {
+#page-head p span {
   white-space: nowrap;
 }
 
-#headBG p span:first-child::before
-, #headBG p span::after {
+#page-head p span:first-child::before
+, #page-head p span::after {
   content: "|";
   text-align: center;
   display: inline-block;
   color: rgba(255, 255, 255, 0.3);
 }
 
-#headBG p span:first-child::before {
+#page-head p span:first-child::before {
     padding: 0 2rem 0 1rem;
 }
 
-#headBG p span::after {
+#page-head p span::after {
     padding: 0 1rem 0 2rem;
 }
 
-#headBG.headBG-sub {
+#page-head.page-head--sub {
   background: #000000;
   height: 70vh;
   line-height: 70vh;
 }
 
-#headBG #overlay {
+#page-head #overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -492,14 +492,14 @@ font-size: 1.1rem;
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #headBG h1 {
+  #page-head h1 {
     font-size: 16vw;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-  #headBG h1 {
+  #page-head h1 {
     font-size: 11vw;
   }
 }
@@ -525,13 +525,13 @@ font-size: 1.1rem;
     right: 0;
   }
 
-  #headBG p span {
+  #page-head p span {
     display: block;
     font-size: 3.5vw;
   }
 
-  #headBG p span:first-child::before
-  , #headBG p span::after {
+  #page-head p span:first-child::before
+  , #page-head p span::after {
     content: none;
   }
 }

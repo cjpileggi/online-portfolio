@@ -13,7 +13,7 @@
   $result2 = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC LIMIT 3");
 ?>
 
-<div id="headBG"><!--beginning of landing page title-->
+<div id="page-head"><!--beginning of landing page title-->
   <div id="overlay"></div>
   <div class="center">
     <h1>Christopher Pileggi</h1>
