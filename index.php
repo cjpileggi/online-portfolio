@@ -29,7 +29,7 @@
 
 <div class="sect"><!--beginning of project section-->
   <div class="container">
-    <h2 class="land-sec">
+    <h2 class="sect__header">
       Projects
     </h2>
     <div class="entry__row entry__row--last">
@@ -52,7 +52,7 @@
 
 <div class="sect grey-bg"><!--beginning of blog section-->
   <div class="container">
-    <h2 class="land-sec">
+    <h2 class="sect__header">
       Blog
     </h2>
     <div class="entry__row entry__row--last">

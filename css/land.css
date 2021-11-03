@@ -21,7 +21,7 @@ color: #FFFFFF;
   color: #8AC953;
 }
 
-.land-sec {
+.sect__header {
   font-size: 3.4rem;
   font-weight: 300;
   font-family: 'Dosis', sans-serif;
@@ -31,7 +31,7 @@ color: #FFFFFF;
   margin-bottom: 3rem;
 }
 
-.land-sec::before, .land-sec::after {
+.sect__header::before, .sect__header::after {
   content: "";
   background-color: #CCCCCC;
   display: inline-block;
@@ -46,8 +46,7 @@ color: #FFFFFF;
     font-size: 8vw;
   }
 
-  .land-sec {
+  .sect__header {
     font-size: 7vw;
   }
-
 }
