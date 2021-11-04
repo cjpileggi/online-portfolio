@@ -1,23 +1,23 @@
-#social-links {
+#page-head__social-links {
   margin-top: 3rem;
 }
 
-#social-links li {
+#page-head__social-links li {
   display: inline-block;
   margin: 0 1.3rem;
   font-size: 2.3rem;
 }
 
-#social-links li a {
+#page-head__social-links li a {
 color: #FFFFFF;
 transition: all 0.3s ease-in-out
 }
 
-#social-links li a:visited {
+#page-head__social-links li a:visited {
 color: #FFFFFF;
 }
 
-#social-links li a:hover {
+#page-head__social-links li a:hover {
   color: #8AC953;
 }
 
@@ -42,7 +42,7 @@ color: #FFFFFF;
 }
 
 @media only screen and (max-width: 767px) {
-  #social-links li {
+  #page-head__social-links li {
     font-size: 8vw;
   }
 

@@ -18,7 +18,7 @@
   <div class="center">
     <h1>Christopher Pileggi</h1>
     <p><span>Full Stack Developer</span><span>Data Scientist</span></p>
-    <ul id="social-links">
+    <ul id="page-head__social-links">
       <li><a href="https://github.com/cjpileggi" target="_blank"><i class="fab fa-github"></i></a></li>
       <li><a href="https://www.linkedin.com/in/pileggichristopher/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       <li><a href="https://twitter.com/pileggiChris" target="_blank"><i class="fab fa-twitter"></i></a></li>
