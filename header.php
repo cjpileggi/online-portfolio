@@ -12,7 +12,7 @@
 	<head>
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?= STYLES_PATH . "home.css"; ?>" />
+    <link rel="stylesheet" href="<?= STYLES_PATH . "main.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!--load all styles -->
 
     <!--favicon and shortcut icons-->
