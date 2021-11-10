@@ -1,0 +1,10 @@
+# Turn on Rewrite Engine
+RewriteEngine on
+
+# Rewrite rule for projects/entry.php?slug=xxxx
+# NC - non case sensitive
+# L - last rule the condition will match
+RewriteRule ^projects/([0-9A-Za-z-]+)$ projects/entry.php?slug=$1 [NC,L]
+
+# Rewrite rule for blog/entry.php?slug=xxxx
+RewriteRule ^blog/([0-9A-Za-z-]+)$ blog/entry.php?slug=$1 [NC,L]
