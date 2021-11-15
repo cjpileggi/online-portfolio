@@ -4,6 +4,7 @@
   *
   */
 
+  require_once("./config.php");
   define("STYLES_PATH", "/css/");
   $headOpac = false;
 ?>
