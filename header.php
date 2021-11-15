@@ -13,8 +13,8 @@
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= STYLES_PATH . "main.css"; ?>" />
-    <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!--load all styles -->
-    <link rel="stylesheet" href="<?= STYLES_PATH . "prism.css"; ?>" /> <!--load all styles -->
+    <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!-- Font Awesome styles -->
+    <link rel="stylesheet" href="<?= STYLES_PATH . "prism.css"; ?>" /> <!-- PrismJS styles -->
 
     <!--favicon and shortcut icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png" />
