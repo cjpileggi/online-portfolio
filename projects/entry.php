@@ -18,7 +18,7 @@ $result = $db->queryRes("SELECT * FROM project_entry WHERE slug = :slug", array(
     </h1>
   </div>
   <p class="blurb"><?php echo $result[0]['blurb'] ?></p>
-  <img src="../img/<?php echo $result[0]['img'] ?>" alt="" />
+  <img src="<?= IMAGES_PATH . $result[0]['img'] ?>" alt="" />
   <div class="entry-detail__body">
     <?php if($result[0]['github'] != "") { ?>
       <div id="proj-git">

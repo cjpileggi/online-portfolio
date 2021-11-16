@@ -23,7 +23,7 @@ $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':s
     </time>
   </div>
   <p class="blurb"><?= $result[0]['blurb'] ?></p>
-  <img src="../img/<?= $result[0]['img'] ?>" alt="" />
+  <img src=<?= IMAGES_PATH . $result[0]['img'] ?>" alt="" />
   <div class="entry-detail__body">
     <?php echo $result[0]['body'] ?>
   </div>
