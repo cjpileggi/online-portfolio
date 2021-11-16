@@ -4,7 +4,7 @@
   *
   */
 
-  require_once("./config.php");
+  require_once("config.php");
   $headOpac = false;
 ?>
 <!DOCTYPE html>
