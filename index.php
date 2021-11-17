@@ -16,7 +16,7 @@
 <div id="page-head"><!--beginning of landing page title-->
   <div id="page-head__overlay"></div>
   <div class="center">
-    <h1>Christopher Pileggi</h1>
+    <h1><?= NAME_LANDING ?></h1>
     <p><span>Full Stack Developer</span><span>Data Scientist</span></p>
     <ul id="page-head__social-links">
       <li><a href="<?= SOCIAL_GITHUB ?>" target="_blank"><i class="fab fa-github"></i></a></li>

@@ -15,4 +15,6 @@ define("SOCIAL_GITHUB", "https://github.com/cjpileggi");
 define("SOCIAL_LINKEDIN", "https://www.linkedin.com/in/pileggichristopher/");
 define("SOCIAL_TWITTER", "https://twitter.com/pileggiChris");
 define("SOCIAL_INSTAGRAM", "https://instagram.com/cpileggi314");
+
+define("NAME_LANDING", "John Doe");
  ?>
