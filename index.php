@@ -19,10 +19,10 @@
     <h1>Christopher Pileggi</h1>
     <p><span>Full Stack Developer</span><span>Data Scientist</span></p>
     <ul id="page-head__social-links">
-      <li><a href="https://github.com/cjpileggi" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/pileggichristopher/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://twitter.com/pileggiChris" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://instagram.com/cpileggi314" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="<?= SOCIAL_GITHUB ?>" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="<?= SOCIAL_LINKEDIN ?>" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="<?= SOCIAL_TWITTER ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="<?= SOCIAL_INSTAGRAM ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
     </ul>
   </div>
 </div><!--end of landing page title-->
