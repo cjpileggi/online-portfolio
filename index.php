@@ -5,7 +5,7 @@
   */
 
   include_once "dbConfig.php";
-  $title = "Chris Pileggi";
+  $title = NAME_TITLE;
   include "header.php";
   $headOpac = true;
 

@@ -4,7 +4,7 @@
 *
 *
 */
-$title = "Chris Pileggi - Projects";
+$title = "Projects | " . NAME_TITLE;
 include "../header.php";
 include_once "../dbConfig.php";
 
