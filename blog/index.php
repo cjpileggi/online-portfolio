@@ -6,7 +6,7 @@
 *
 */
 include_once "../dbConfig.php";
-$title = "Chris Pileggi - Blog";
+$title = "Blog | " . NAME_TITLE;
 include "../header.php";
 $headOpac = true;
 
