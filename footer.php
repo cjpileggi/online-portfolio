@@ -1,7 +1,7 @@
   <footer id="footer">
     <div id="footer__inner"><!--begin footer-->
       <div id="cpy-rt">
-        &#169; Copyright <?= date("Y"); ?> - Chris Pileggi
+        &#169; Copyright <?= date("Y"); ?> - <?= NAME_COPY ?>
       </div>
       <div>
         <ul id="footer__social-links">
