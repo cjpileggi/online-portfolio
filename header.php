@@ -3,9 +3,8 @@
   * Global Header
   *
   */
-
   require_once("config.php");
-  $headOpac = false;
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
