@@ -20,4 +20,6 @@ define("SOCIAL_INSTAGRAM", "https://instagram.com/");
 define("NAME_LANDING", "John Doe");
 define("NAME_COPY", "John Doe");
 define("NAME_TITLE", "John Doe");
+
+$headOpac = false;
  ?>
