@@ -3,14 +3,17 @@
   * Landing Page
   *
   */
-
-  include_once "dbConfig.php";
-  $title = NAME_TITLE;
-  include "header.php";
-  $headOpac = true;
-
+  require_once("config.php");
+  
+  require_once("dbConfig.php");
   $result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC LIMIT 3");
   $result2 = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC LIMIT 3");
+
+  $title = NAME_TITLE;
+  require_once("header.php");
+
+  $headOpac = true;
+
 ?>
 
 <div id="page-head"><!--beginning of landing page title-->
