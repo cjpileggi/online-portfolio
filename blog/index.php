@@ -5,14 +5,16 @@
 *
 *
 */
-include_once "../dbConfig.php";
-$title = "Blog | " . NAME_TITLE;
-include "../header.php";
-$headOpac = true;
+require_once("../config.php");
 
+require_once("../dbConfig.php");
 $result = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC");
-
 $rCnt = count($result);
+
+$title = "Blog | " . NAME_TITLE;
+require_once("../header.php");
+
+$headOpac = true;
 ?>
 <div id="page-head" class="page-head--sub">
   <div class="center">

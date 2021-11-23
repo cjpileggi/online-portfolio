@@ -4,13 +4,16 @@
 *
 *
 */
-$title = "Projects | " . NAME_TITLE;
-include "../header.php";
-$headOpac = true;
-include_once "../dbConfig.php";
+require_once("../config.php");
 
+require_once("../dbConfig.php");
 $result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC");
 $rCnt = count($result);
+
+$title = "Projects | " . NAME_TITLE;
+require_once("../header.php");
+
+$headOpac = true;
 ?>
 <div id="page-head" class="page-head--sub">
   <div class="center">

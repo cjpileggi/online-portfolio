@@ -4,11 +4,13 @@
 *
 *
 */
-$title = "Projects | " . NAME_TITLE;
-include "../header.php";
-include_once "../dbConfig.php";
+require_once("../config.php");
 
+require_once("../dbConfig.php");
 $result = $db->queryRes("SELECT * FROM project_entry WHERE slug = :slug", array(':slug' => $_GET['slug']));
+
+$title = "Projects | " . NAME_TITLE;
+require_once("../header.php");
 ?>
 
 <div class="entry-detail"><!--begin project entry-->

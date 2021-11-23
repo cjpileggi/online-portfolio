@@ -4,8 +4,6 @@
 *
 */
 
-include_once "config.php";
-
 class queryDB {
   /**
   * Class containing PDO create and query funtions
