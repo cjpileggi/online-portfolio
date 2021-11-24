@@ -9,7 +9,7 @@ require_once("../config.php");
 require_once("../dbConfig.php");
 $result = $db->queryRes("SELECT * FROM blog_entry WHERE slug = :slug", array(':slug' => $_GET['slug']));
 
-$title = "Blog | " . NAME_TITLE;
+$title = $result[0]['title'] . " | Blog | " . NAME_TITLE;
 require_once("../header.php");
 ?>
 
