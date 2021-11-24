@@ -9,7 +9,7 @@ require_once("../config.php");
 require_once("../dbConfig.php");
 $result = $db->queryRes("SELECT * FROM project_entry WHERE slug = :slug", array(':slug' => $_GET['slug']));
 
-$title = "Projects | " . NAME_TITLE;
+$title = $result[0]['name'] . " | Projects | " . NAME_TITLE;
 require_once("../header.php");
 ?>
 
