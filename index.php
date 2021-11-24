@@ -65,7 +65,7 @@
         {?>
         <div class="entry__item">
           <a href="blog/entry.php?slug=<?php echo $result2[$i]['slug']; ?>">
-          <div class="entry__img"><img src=<?= IMAGES_PATH . $result2[$i]['img']; ?>" alt="" /></div>
+          <div class="entry__img"><img src="<?= IMAGES_PATH . $result2[$i]['img']; ?>" alt="" /></div>
           <h3><?php echo $result2[$i]['title']; ?></h3>
           <p><?php echo $result2[$i]['blurb']; ?></p>
         </a>
