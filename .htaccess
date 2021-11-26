@@ -1,6 +1,9 @@
 # Turn on Rewrite Engine
 RewriteEngine on
 
+# Redirect error pages
+ErrorDocument 404 /err/404.php
+
 # Rewrite rule for projects/entry.php?slug=xxxx
 # NC - non case sensitive
 # L - last rule the condition will match
