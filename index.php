@@ -3,6 +3,9 @@
   * Landing Page
   *
   */
+  ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
   require_once("config.php");
   
   require_once("dbConfig.php");
@@ -41,7 +44,7 @@
       for ($i = 0; $i < count($result); $i++)
       {?>
         <div class="entry__item">
-          <a href="projects/entry.php?slug=<?php echo $result[$i]['slug']; ?>">
+          <a href="projects/<?php echo $result[$i]['slug']; ?>">
             <div class="entry__img"><img src="<?= IMAGES_PATH . $result[$i]['img']; ?>" alt="" /></div>
             <h3><?php echo $result[$i]['name']; ?></h3>
             <p><?php echo $result[$i]['blurb']; ?></p>
@@ -64,7 +67,7 @@
         for ($i = 0; $i < count($result2); $i++)
         {?>
         <div class="entry__item">
-          <a href="blog/entry.php?slug=<?php echo $result2[$i]['slug']; ?>">
+          <a href="blog/<?php echo $result2[$i]['slug']; ?>">
           <div class="entry__img"><img src="<?= IMAGES_PATH . $result2[$i]['img']; ?>" alt="" /></div>
           <h3><?php echo $result2[$i]['title']; ?></h3>
           <p><?php echo $result2[$i]['blurb']; ?></p>
