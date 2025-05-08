@@ -12,7 +12,7 @@ error_reporting(E_ALL);
   $result = $db->queryRes("SELECT * FROM project_entry WHERE disabled <> 1 ORDER BY create_date DESC LIMIT 3");
   $result2 = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC LIMIT 3");
 
-  $title = NAME_TITLE;
+  $title = NAME_TITLE . " | " . NAME_TITLE_2;
   $meta_descr = META_DESCR_HOME;
   require_once("header.php");
 
