@@ -21,5 +21,7 @@ define("NAME_LANDING", "John Doe");
 define("NAME_COPY", "John Doe");
 define("NAME_TITLE", "John Doe");
 
+define("META_DESCR_HOME", "Description of home page used in meta tag.");
+
 $headOpac = false;
  ?>

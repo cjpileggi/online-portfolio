@@ -9,6 +9,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="description" content="<?= $meta_descr ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= STYLES_PATH . "main.css"; ?>" />
     <link rel="stylesheet" href="<?= STYLES_PATH . "all.min.css"; ?>" /> <!-- Font Awesome styles -->

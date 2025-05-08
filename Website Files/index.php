@@ -13,6 +13,7 @@ error_reporting(E_ALL);
   $result2 = $db->queryRes("SELECT * FROM blog_entry ORDER BY date DESC LIMIT 3");
 
   $title = NAME_TITLE;
+  $meta_descr = META_DESCR_HOME;
   require_once("header.php");
 
   $headOpac = true;
