@@ -278,6 +278,28 @@ color: #FFFFFF;
   color: #8AC953;
 }
 
+/* Landing Page About Paragraph 
+==========================*/
+
+#about {
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-left: 4em;  
+}
+
+#about p {
+ margin-bottom: 1.2rem;
+
+}
+
+#about > p:first-child {
+  text-indent: -4em;    /* Pulls the first line to the left */
+}
+
+#about #about-bold {
+  font-size: 2.1rem;
+}
+
 /* Blog and Project Items
 ============================*/
 .entry__row {
@@ -610,6 +632,16 @@ font-size: 1.1rem;
   #header_inner ul {
     display: none;
   }
+  
+  #about {
+
+  padding-left: 0;  
+}
+
+
+#about > p:first-child {
+  text-indent: 0;    /* Pulls the first line to the left */
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -3,7 +3,8 @@
   * Landing Page
   *
   */
-  ini_set('display_errors', '1');
+  
+ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
   require_once("config.php");
@@ -33,6 +34,18 @@ error_reporting(E_ALL);
     </ul>
   </div>
 </div><!--end of landing page title-->
+
+<div class="sect grey-bg"><!--beginning of about paragraph-->
+	<div class="container">
+    		<!--<h2 class="sect__header">
+		About
+		</h2> -->
+		<div id="about">
+			<?php echo ABOUT_PARAGRAPH; ?>
+		</div>
+	</div>
+</div>
+<!--end of about paragraph-->
 
 <div class="sect"><!--beginning of project section-->
   <div class="container">

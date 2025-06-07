@@ -4,7 +4,7 @@
 define('DBHOST', "localhost");
 define('DBNAME', "portfolio_main");
 define('DBUN', "root");
-define('DBPW', "");
+define('DBPW', "@123@");
 
 define("STYLES_PATH", "/css/");
 
@@ -23,6 +23,15 @@ define("NAME_TITLE", "John Doe");
 define("NAME_TITLE_2", "Programmer");
 
 define("META_DESCR_HOME", "Description of home page used in meta tag.");
+
+const ABOUT_PARAGRAPH = <<<'HTML'
+<p><span id="about-bold">Hi, I'm John</span> — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+
+<p>Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.</p>
+HTML;
+
 
 $headOpac = false;
  ?>
