@@ -59,7 +59,7 @@ error_reporting(E_ALL);
       {?>
         <div class="entry__item">
           <a href="projects/<?php echo $result[$i]['slug']; ?>">
-            <div class="entry__img"><img src="<?= IMAGES_PATH . $result[$i]['img']; ?>" alt="" /></div>
+            <div class="entry__img"><img src="<?= IMAGES_PATH . $result[$i]['img']; ?>" alt="<?= $result[$i]['img_alt']; ?>" /></div>
             <h3><?php echo $result[$i]['name']; ?></h3>
             <p><?php echo $result[$i]['blurb']; ?></p>
           </a>
@@ -82,7 +82,7 @@ error_reporting(E_ALL);
         {?>
         <div class="entry__item">
           <a href="blog/<?php echo $result2[$i]['slug']; ?>">
-          <div class="entry__img"><img src="<?= IMAGES_PATH . $result2[$i]['img']; ?>" alt="" /></div>
+          <div class="entry__img"><img src="<?= IMAGES_PATH . $result2[$i]['img']; ?>" alt="<?= $result2[$i]['img_alt']; ?>" /></div>
           <h3><?php echo $result2[$i]['title']; ?></h3>
           <p><?php echo $result2[$i]['blurb']; ?></p>
         </a>

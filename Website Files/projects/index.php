@@ -32,7 +32,7 @@ $headOpac = true;
       { ?>
         <div class="entry__item">
           <a href="<?php echo $result[$i]['slug']; ?>">
-            <div class="entry__img"><img src="<?= IMAGES_PATH . $result[$i]['img']; ?>" alt="" /></div>
+            <div class="entry__img"><img src="<?= IMAGES_PATH . $result[$i]['img']; ?>" alt="<?= $result[$i]['img_alt']; ?>" /></div>
             <h3><?php echo $result[$i]['name']; ?></h3>
             <p><?php echo $result[$i]['blurb']; ?></p>
           </a>
